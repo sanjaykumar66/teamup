@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Login from './Components/Login';
 import Signup from "./Components/Signup";
+import Dashboard from "./Components/Dashboard";
+
 function App() {
   return (
     <div className="theme-cyan authentication sidebar-collapse">
@@ -11,6 +13,8 @@ function App() {
 
 
            <Route  path='/register' component={Signup} />
+
+           <Route  path='/dashboard' component={Dashboard} />
 
 
         </Switch>
